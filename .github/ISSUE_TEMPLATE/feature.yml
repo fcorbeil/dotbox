@@ -1,0 +1,26 @@
+name: Suggest a feature
+description: An idea to make DotBox better.
+labels: ["feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before writing, look at the existing requests: a 👍 on one of them counts as a vote.
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What would it help you do?
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device
+      options:
+        - Xbox
+        - Windows
+        - Both
