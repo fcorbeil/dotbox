@@ -1,0 +1,40 @@
+name: Report a problem
+description: Something does not work as expected.
+labels: ["problem"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you! Please do **not** write a server address, a user name or a password: this page is public.
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device
+      options:
+        - Xbox
+        - Windows
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, what you saw.
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where?
+      options:
+        - Live TV
+        - Guide
+        - Movies or series
+        - Sources
+        - Settings
+        - Other
+  - type: input
+    id: build
+    attributes:
+      label: Build date
+      description: Last line of the Information panel (I key, or the More menu).
