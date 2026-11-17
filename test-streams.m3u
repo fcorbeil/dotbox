@@ -1,0 +1,45 @@
+#EXTM3U
+# DotBox - test playlist
+#
+# Free, publicly available streams to try an M3U player such as DotBox: a live channel and
+# three open movies. DotBox itself ships no content; this list only points to streams their
+# owners publish openly. Every address was checked on 2026-11-17 (a real video segment or the
+# start of the file was downloaded); test streams move, so check them again before use.
+#
+# Licences (each checked at its source on 2026-11-17):
+# - The live channel is a public test stream run by iReplay.tv (ireplay.tv) for testing
+#   players. No licence is published for the stream itself: use it for testing only, as it is
+#   offered. What it plays are the Blender Foundation's open movies, under CC BY (below).
+# - Sintel, Tears of Steel and Elephants Dream are open movies of the Blender Foundation,
+#   released under Creative Commons Attribution licences (CC BY). Their posters, from
+#   Wikimedia Commons, are under the licences noted beside each movie. CC BY allows sharing,
+#   commercial use included, with the credit given below.
+
+# iReplay.tv test channel: the Blender open movies played one after the other, 24/7, as a live
+# stream (HLS with fragmented MP4 pieces and its sound in a list of its own, 270p to 1080p, a
+# discontinuity between movies). Public test stream, no published licence.
+#EXTINF:-1 group-title="Tests - Live",iReplay - Blender movies (live)
+https://ireplay.tv/test/blender.m3u8
+
+# The same channel, a single 1080p rendition.
+#EXTINF:-1 group-title="Tests - Live",iReplay - Blender movies 1080p (live)
+https://ireplay.tv/test/hd_blender.m3u8
+
+# Sintel (2010). Film: (c) copyright Blender Foundation | durian.blender.org, CC BY 3.0
+# (https://creativecommons.org/licenses/by/3.0/). Poster: (c) copyright Blender Foundation |
+# durian.blender.org, CC BY 3.0, via Wikimedia Commons (File:Sintel poster.jpg).
+#EXTINF:-1 tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Sintel_poster.jpg/500px-Sintel_poster.jpg" group-title="Tests - Movies",Sintel (2010)
+https://download.blender.org/durian/movies/Sintel.2010.1080p.mkv
+
+# Tears of Steel (2012). Film: (CC) Blender Foundation | mango.blender.org, CC BY 3.0
+# (https://creativecommons.org/licenses/by/3.0/). Poster: (CC) Blender Foundation | Project
+# Mango, CC BY 3.0, via Wikimedia Commons (File:Tos-poster.png).
+#EXTINF:-1 tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Tos-poster.png/500px-Tos-poster.png" group-title="Tests - Movies",Tears of Steel (2012)
+https://download.blender.org/demo/movies/ToS/tears_of_steel_720p.mov
+
+# Elephants Dream (2006). Film: (c) Blender Foundation / Netherlands Media Art Institute,
+# orange.blender.org, CC BY 2.5 (https://creativecommons.org/licenses/by/2.5/). Poster: Bassam
+# Kurdali, Andy Goralczyk and the Blender Foundation, CC BY 4.0
+# (https://creativecommons.org/licenses/by/4.0/), via Wikimedia Commons (File:ElephantsDreamPoster.jpg).
+#EXTINF:-1 tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/ElephantsDreamPoster.jpg/500px-ElephantsDreamPoster.jpg" group-title="Tests - Movies",Elephants Dream (2006)
+https://download.blender.org/ED/ED_1024.avi
